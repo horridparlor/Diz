@@ -1,0 +1,141 @@
+:root {
+    /* Colors */
+    --background-light-gray: #f5f5f5;
+    --background-white: white;
+    --border-gray: #6f968f;
+
+    --brand-blue: #0ba4d3;
+    --brand-green: #80f299;
+    --brand-orange: #f27a46;
+
+    --text-black: #141414;
+    --text-gray: #666666;
+    --text-dark-gray: #363636;
+    --text-light-link: #cefcff;
+    --text-link: #364c64;
+    --text-white: #ffffff;
+
+    /* Margins */
+    --margin-offwall: min(4vw, 1.2rem);
+
+    --border-thin: 0.1rem solid var(--border-gray);
+}
+
+body {
+    background-color: var(--brand-green);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: var(--text-dark-gray);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.text-input {
+    width: 70vw;
+    border: var(--border-thin);
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+    resize: none;
+}
+
+.lift-down {
+    margin-top: 4vh;
+}
+
+.lift-right {
+    margin-left: 4vh;
+}
+
+.boss-container {
+    display: flex;
+    margin-left: var(--margin-offwall);
+}
+
+.boss-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-label {
+    font-weight: 700;
+    padding: 0.9rem;
+    font-size: 1.6rem;
+}
+
+.boss-label {
+    font-weight: 600;
+    background-color: var(--background-white);
+    padding: 0.9rem;
+    border-radius: 1.2rem;
+    border: var(--border-thin);
+    color: var(--text-gray);
+}
+
+.e-reader {
+    max-width: 80vw;
+    line-height: 2rem;
+    color: var(--text-dark-gray);
+    font-weight: 500;
+}
+
+.settings-icon {
+    font-size: 2rem;
+    color: var(--text-gray);
+}
+
+.banner-container {
+    display: flex;
+    padding-left: var(--margin-offwall);
+    padding-bottom: 5vh;
+    background-color: var(--brand-blue);
+    margin: 0px;
+}
+
+.right-clued {
+    margin-left: auto;
+    margin-right: min(4vw, 1.2rem);
+}
+
+.boss-button {
+    padding: 0.6rem;
+    background-color: var(--background-white);
+    border-radius: 0.4rem;
+    border: var(--border-thin);
+}
+
+a { color: var(--text-dark-gray); }
+
+a:link { text-decoration: none; }
+
+a:hover {
+    color: var(--text-link);
+}
+
+a:visited { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+.light-link {
+    color: var(--text-white);
+}
+
+.light-link:hover {
+    color: var(--text-light-link);
+}
+
+.main-icon {
+    padding-top: max(min(3.6rem, 10vh), min(2.6rem, 28vh));
+    margin-left: min(-1.2rem, -1.4vw);
+}
+
+.clickable {
+    color: var(--text-black);
+}
+
+.clickable:hover {
+    color: var(--text-link);
+}

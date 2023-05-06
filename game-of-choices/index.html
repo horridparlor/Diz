@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of choices</title>
+    <link rel="stylesheet" href="../styles/diz/bossetta.css">
+    <link rel="stylesheet" href="../styles/fa/css/all.css">
+    <link rel="icon" type="image/png" href="../icons/favicon.png">
+
+    <script src="index.js"></script>
+    <script src="dialogue.js"></script>
+</head>
+<body>
+    <div class="banner-container">
+        <label class="main-label lift-down">
+            <a href="../" class="light-link">Digital Zero</a>
+        </label>
+        <img class="main-icon" src="../icons/favpart.png" width="32" height="32">
+        <div class="right-clued lift-down">
+            <div class="boss-button">
+                <i class="settings-icon fa-solid fa-list"></i>
+            </div>
+            
+        </div>
+   </div>
+   
+   <div class="boss-column lift-down">
+    <label class="boss-label e-reader" id="dialogue">Loading...</label>
+    <div class="boss-container lift-down">
+        <label class="boss-label clickable" id="option-one" onclick="onOptionChosen(this.innerHTML)">Option 1</label>
+        <label class="boss-label clickable lift-right" id="option-two" onclick="onOptionChosen(this.innerHTML)">Option 2</label>
+        <label class="boss-label clickable lift-right" id="option-three" onclick="onOptionChosen(this.innerHTML)">Option 3</label>
+        <label class="boss-label clickable lift-right" id="option-four" onclick="onOptionChosen(this.innerHTML)">Option 4</label>
+    </div>
+   </div>
+</div>
+</body>
+</html>
