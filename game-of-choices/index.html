@@ -11,6 +11,7 @@
 
     <script src="index.js"></script>
     <script src="dialogue.js"></script>
+    <script src="../credentials.js"></script>
 </head>
 <body>
     <div class="banner-container">
@@ -28,11 +29,7 @@
    
    <div class="boss-column lift-down">
     <label class="boss-label e-reader" id="dialogue">Loading...</label>
-    <div class="boss-container lift-down">
-        <label class="boss-label clickable" id="option-one" onclick="onOptionChosen(this.innerHTML)">Option 1</label>
-        <label class="boss-label clickable lift-right" id="option-two" onclick="onOptionChosen(this.innerHTML)">Option 2</label>
-        <label class="boss-label clickable lift-right" id="option-three" onclick="onOptionChosen(this.innerHTML)">Option 3</label>
-        <label class="boss-label clickable lift-right" id="option-four" onclick="onOptionChosen(this.innerHTML)">Option 4</label>
+    <div class="boss-container lift-down" id="options-container">
     </div>
    </div>
 </div>

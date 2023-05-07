@@ -128,7 +128,7 @@ a:active { text-decoration: none; }
 }
 
 .main-icon {
-    padding-top: max(min(3.6rem, 10vh), min(2.6rem, 28vh));
+    padding-top: max(min(3.6rem, 10vh), min(2.6rem, 28vh), min(3.4vh + 2rem, 12vh));
     margin-left: min(-1.2rem, -1.4vw);
 }
 
