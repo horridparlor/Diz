@@ -7,12 +7,11 @@ class Database
     function connect()
     {
         $credentials = new Credentials();
-        $usermask = $credentials->usermask;
 
         $servername = $credentials->servername;
-        $username = $usermask . "raisen1";
-        $password = "MinustaKasvaaIsoTytto";
-        $dbname = $usermask . "raisen_stories";
+        $username = $credentials->username;
+        $password = $credentials->password;
+        $dbname = $credentials->dbName;
 
         $connection = new mysqli($servername, $username, $password, $dbname);
         if ($connection->connect_error) {
