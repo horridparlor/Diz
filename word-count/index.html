@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Count</title>
     <script src="index.js"></script>
+    <script src="../utils/input.js"></script>
     <link rel="stylesheet" href="../styles/diz/bossetta.css">
     <link rel="stylesheet" href="../styles/fa/css/all.css">
     <link rel="icon" type="image/png" href="../icons/favicon.png">
@@ -26,10 +27,10 @@
 
     <div class="boss-column lift-down">
         <div class="boss-container">
-            <label class="boss-label" id="wCount" boss-tooltip="Found this many words:">Words: 0</label>
-            <label class="boss-label lift-right" id="cCount" boss-tooltip="Found this many characters:">Characters: 0</label>
+            <label class="boss-label" id="wCount" boss-hint="Found this many words:">Words: 0</label>
+            <label class="boss-label lift-right" id="cCount" boss-hint="Found this many characters:">Characters: 0</label>
         </div>
-        <textarea rows="25" id="words" class="text-input lift-down" oninput="updateWordCount()"></textarea>
+        <textarea rows="25" id="words" class="text-input lift-down" oninput="updateWordCount(id)"></textarea>
     </div>
 </body>
 </html>

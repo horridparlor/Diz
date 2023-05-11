@@ -13,6 +13,7 @@
     --text-black: #141414;
     --text-gray: #666666;
     --text-dark-gray: #363636;
+    --text-light-gray: #acacac;
     --text-light-link: #cefcff;
     --text-link: #364c64;
     --text-white: #ffffff;
@@ -52,6 +53,10 @@ body {
 
 .lift-right {
     margin-left: 4vh;
+}
+
+.step-right {
+    margin-left: 1.5vh;
 }
 
 .boss-container {
@@ -146,16 +151,16 @@ a:active { text-decoration: none; }
     color: var(--text-link);
 }
 
-[boss-tooltip] {
+[boss-hint] {
     position: relative;
     cursor: default;
 }
 
-[boss-tooltip]::after {
+[boss-hint]::after {
     position: absolute;
     width: var(--tooltip-width);
     left: calc(50% - var(--tooltip-width) / 2);
-    content: attr(boss-tooltip);
+    content: attr(boss-hint);
     bottom: 120%;
     text-align: center;
     box-sizing: border-box;
@@ -170,8 +175,46 @@ a:active { text-decoration: none; }
     font-size: 1rem;
 }
 
-[boss-tooltip]:hover::after {
+[boss-hint]:hover::after {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+.boss-checkbox, .boss-charput {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--background-light-gray);
+    border-radius: 0.2rem;
+    vertical-align: middle;
+    border: var(--border-thin);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    transform: translateY(0.3rem);
+}
+
+.boss-checkbox:checked {
+    background-color: var(--brand-blue);
+    border: var(--border-noticable);
+}
+
+.boss-charput {
+    width: 2.15rem;
+    height: 2.15rem;
+    transform: translateY(0.5rem);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-align: center;
+    color: var(--text-gray)
+}
+
+.border-noticable {
+    border: var(--border-noticable); 
+}
+
+.lesser {
+    font-weight: 500;
+    color: var(--text-light-gray);
 }
