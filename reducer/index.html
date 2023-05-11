@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Count</title>
+    <title>Reducer</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="../styles/diz/bossetta.css">
     <link rel="stylesheet" href="../styles/fa/css/all.css">
@@ -26,10 +26,9 @@
 
     <div class="boss-column lift-down">
         <div class="boss-container">
-            <label class="boss-label" id="wCount" boss-tooltip="Found this many words:">Words: 0</label>
-            <label class="boss-label lift-right" id="cCount" boss-tooltip="Found this many characters:">Characters: 0</label>
+            <label class="boss-label" boss-tooltip="Remove spaces and linebreaks">Reducer</label>
         </div>
-        <textarea rows="25" id="words" class="text-input lift-down" oninput="updateWordCount()"></textarea>
+        <textarea rows="25" id="words" class="text-input lift-down" oninput="reduce()"></textarea>
     </div>
 </body>
 </html>
