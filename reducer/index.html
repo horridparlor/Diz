@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reducer</title>
     <script src="index.js"></script>
+    <script src="../utils/input.js"></script>
     <link rel="stylesheet" href="../styles/diz/bossetta.css">
     <link rel="stylesheet" href="../styles/fa/css/all.css">
     <link rel="icon" type="image/png" href="../icons/favicon.png">
@@ -25,10 +26,16 @@
    </div>
 
     <div class="boss-column lift-down">
-        <div class="boss-container">
-            <label class="boss-label" boss-tooltip="Remove spaces and linebreaks">Reducer</label>
-        </div>
-        <textarea rows="25" id="words" class="text-input lift-down" oninput="reduce()"></textarea>
+        <label class="boss-label" boss-hint="Removes spaces and linebreaks">Reducer</label>
+        <div class="boss-container lift-down">
+            <label class="boss-label lesser" boss-hint="Removes spaces">[ _ ]</label>
+            <input type="checkbox" class="boss-checkbox step-right" id="rmSpace" onchange="reduce()">
+            <label class="boss-label lesser lift-right" boss-hint="Removes linebreaks">\n</label>
+            <input type="checkbox" class="boss-checkbox step-right" id="rmBreak" onchange="reduce()">
+            <label class="boss-label lesser lift-right" boss-hint="Removes customer character">c</label>
+            <input type="text" class="boss-charput step-right" maxlength="1" id="rmCustom" oninput="onTextInput(this.id)">
+        </div> 
+        <textarea rows="25" id="words" class="text-input lift-down" oninput="onTextInput(id)"></textarea>
     </div>
 </body>
 </html>

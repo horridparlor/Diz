@@ -1,7 +1,8 @@
 const wordCountPrefix = "Words: ";
 const characterCountPrefix = "Characters: ";
 
-function updateWordCount() {
+function updateWordCount(id) {
+    focusInput(id);
     document.getElementById("wCount").innerHTML = wordCountPrefix + getWordCount();
     document.getElementById("cCount").innerHTML = characterCountPrefix + getCharacterCount();
 }
